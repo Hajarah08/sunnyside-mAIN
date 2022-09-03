@@ -111,9 +111,7 @@ main{
 
 
 h1{
-  
   padding-top: 3.5%;
-  margin: 100px;
   font: 48px;
   font-family: var(--ff-fraunces);
   font-weight: 700;
@@ -174,10 +172,9 @@ p{
   height: 600px;
 }
 .image-text-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .image-text-box .text-container {
   width: 350px;
@@ -244,14 +241,15 @@ small {
 }
 .img-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-template-columns: repeat(4, 25%);
 }
 
-.img-grid{
-  width: 100%;
-}
-  
 
+.img-grid > div img{
+  width:100%;
+  height:auto;
+  display:block;
+}
 
 
 .footer-container{
@@ -298,7 +296,7 @@ small {
     margin-top: 25px;
     margin-bottom: 50px;
   }
-  nav {
+  .navbar {
     padding: 25px;
   }
   h2 {
@@ -397,6 +395,8 @@ small {
     left: 6px;
   }
 }
+
+
 @media (max-width: 980px) {
   .testimonial-grid {
     grid-template-columns: 1fr;
